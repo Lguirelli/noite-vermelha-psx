@@ -1,0 +1,12 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const html=fs.readFileSync('outputs/A-Noite-Vermelha-HTML-27/JOGAR.html','utf8');const script=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(x=>x[1]).join('\n');new vm.Script(script);
+const logic=script.slice(script.indexOf('let actors=[]'),script.indexOf("addEventListener('keydown',ev=>"));
+let ctx={Math,walking:true,freeEye:[0,1.72,0],foot:0,floorAt:()=>0,blocked:(x,z)=>x>1.8&&x<2.2&&Math.abs(z)<4};vm.createContext(ctx);vm.runInContext(logic,ctx);vm.runInContext('resetActors()',ctx);
+assert.equal(vm.runInContext('segmentSafe({x:0,y:0,z:0},{x:4,y:0,z:0})',ctx),false,'cannot cross wall');
+vm.runInContext('actors[1].x=40;updateActors(.016)',ctx);assert(vm.runInContext('Math.hypot(actors[1].x,actors[1].z)<=3',ctx),'max distance recovery');
+vm.runInContext('actors[1].x=5;actors[1].z=0;for(let j=0;j<200;j++)updateActors(.02)',ctx);assert(vm.runInContext('actors[1].x<1.8',ctx),'blocked follower must recover');
+assert(vm.runInContext('actors.every(a=>!blocked(a.x,-a.z,a.y))',ctx),'recovery positions not in wall');
+ctx.blocked=()=>false;vm.runInContext('resetActors();actors[1].x=-5;actors[1].z=0;updateActors(.05)',ctx);assert(vm.runInContext('actors[1].moving&&actors[1].cycle>0',ctx),'distance animation advances');
+const zoom=script.match(/function zoom\(d\)\{[^\n]+/)[0];vm.runInContext(zoom,ctx);vm.runInContext('zoom(-99999)',ctx);assert.equal(vm.runInContext('cameraDistance',ctx),3);vm.runInContext('zoom(99999)',ctx);assert.equal(vm.runInContext('cameraDistance',ctx),16);
+assert(script.includes("e.pointerType==='mouse'&&walking"));assert(script.includes('surface<6.5'));assert(script.includes('detailTexture'));
+fs.writeFileSync('outputs/A-Noite-Vermelha-HTML-27/TESTES.json',JSON.stringify({syntax:true,wallSweep:true,maximumDistance:true,stuckRecovery:true,safeRecoveryPosition:true,distanceAnimation:true,zoomLimits:true,renderBrowser:'not verified'},null,2));console.log('Gameplay assertions passed');

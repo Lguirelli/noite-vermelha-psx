@@ -1,0 +1,144 @@
+{
+  "source": "C:\\Users\\GrupoFarma\\Documents\\Codex\\2026-10-26\\o-x20\\outputs\\Personagens_PSX_UV_Separadas.blend",
+  "sourceSHA256": "d73e1e6740439af678f22b3a46750332f8bd4e9f3d62b50d525ab9bd2e72e641",
+  "heroes": [
+    {
+      "id": "octavio",
+      "objects": [
+        {
+          "name": "Octavio_Corpo",
+          "vertices": 792,
+          "faces": 932,
+          "uvLayers": [
+            "Attribute",
+            "PSX_Corpo",
+            "UV_Lados_Separados"
+          ]
+        },
+        {
+          "name": "Octavio_Detalhes_Modelados",
+          "vertices": 118,
+          "faces": 87,
+          "uvLayers": [
+            "PSX_Corpo"
+          ]
+        },
+        {
+          "name": "Octavio_Mascara_REMOVIVEL",
+          "vertices": 24,
+          "faces": 20,
+          "uvLayers": [
+            "Mascara_UV"
+          ]
+        },
+        {
+          "name": "Octavio_Volumes_Integrados",
+          "vertices": 80,
+          "faces": 48,
+          "uvLayers": [
+            "PSX_Corpo"
+          ]
+        }
+      ],
+      "bones": 72
+    },
+    {
+      "id": "damiao",
+      "objects": [
+        {
+          "name": "Damiao_Corpo",
+          "vertices": 792,
+          "faces": 932,
+          "uvLayers": [
+            "Attribute",
+            "PSX_Corpo",
+            "UV_Lados_Separados"
+          ]
+        },
+        {
+          "name": "Damiao_Detalhes_Modelados",
+          "vertices": 150,
+          "faces": 111,
+          "uvLayers": [
+            "PSX_Corpo"
+          ]
+        },
+        {
+          "name": "Damiao_Volumes_Integrados",
+          "vertices": 80,
+          "faces": 48,
+          "uvLayers": [
+            "PSX_Corpo"
+          ]
+        }
+      ],
+      "bones": 72
+    },
+    {
+      "id": "baltazar",
+      "objects": [
+        {
+          "name": "Baltazar_Corpo",
+          "vertices": 435,
+          "faces": 546,
+          "uvLayers": [
+            "map1",
+            "UVChannel_1",
+            "UVW",
+            "PSX_Corpo",
+            "UV_Corrigida"
+          ]
+        },
+        {
+          "name": "Baltazar_Detalhes_Modelados",
+          "vertices": 142,
+          "faces": 105,
+          "uvLayers": [
+            "PSX_Corpo"
+          ]
+        },
+        {
+          "name": "Baltazar_Volumes_Integrados",
+          "vertices": 14,
+          "faces": 2,
+          "uvLayers": [
+            "PSX_Corpo"
+          ]
+        }
+      ],
+      "bones": 72
+    },
+    {
+      "id": "turak",
+      "objects": [
+        {
+          "name": "Turak_Corpo",
+          "vertices": 792,
+          "faces": 932,
+          "uvLayers": [
+            "Attribute",
+            "PSX_Corpo",
+            "UV_Lados_Separados"
+          ]
+        },
+        {
+          "name": "Turak_Detalhes_Modelados",
+          "vertices": 179,
+          "faces": 128,
+          "uvLayers": [
+            "PSX_Corpo"
+          ]
+        },
+        {
+          "name": "Turak_Volumes_Integrados",
+          "vertices": 52,
+          "faces": 32,
+          "uvLayers": [
+            "PSX_Corpo"
+          ]
+        }
+      ],
+      "bones": 72
+    }
+  ]
+}

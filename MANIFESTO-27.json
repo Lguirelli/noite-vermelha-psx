@@ -1,0 +1,13 @@
+{
+  "edition": 27,
+  "sourceBlend": "Personagens_PSX_UV_Separadas.blend",
+  "mapSHA256": "a5d227779d9b2bc10a46ce6a87639ae61098da65d9a8671e47a1a5dcf815fe45",
+  "runtimeSHA256": "16dbe0b6db95f6297f8b89a2f08eccddc7c678a477a2fe3ba5638cabc33b6245",
+  "animationLibrary": "Quaternius Universal Animation Library Standard, CC0",
+  "clips": [
+    "Idle_Loop",
+    "Walk_Loop"
+  ],
+  "browserVisualCheck": "not performed",
+  "geometryPreview": "rendered from exact game frames"
+}

@@ -1,0 +1,44 @@
+{
+  "characters": [
+    {
+      "id": "octavio",
+      "sourceVertices": 1014,
+      "triangles": 1952,
+      "rig": true,
+      "clips": 2,
+      "uniquePoses": 48,
+      "embeddedTextures": true
+    },
+    {
+      "id": "damiao",
+      "sourceVertices": 1022,
+      "triangles": 1908,
+      "rig": true,
+      "clips": 2,
+      "uniquePoses": 48,
+      "embeddedTextures": true
+    },
+    {
+      "id": "baltazar",
+      "sourceVertices": 591,
+      "triangles": 1092,
+      "rig": true,
+      "clips": 2,
+      "uniquePoses": 48,
+      "embeddedTextures": true
+    },
+    {
+      "id": "turak",
+      "sourceVertices": 1023,
+      "triangles": 1907,
+      "rig": true,
+      "clips": 2,
+      "uniquePoses": 48,
+      "embeddedTextures": true
+    }
+  ],
+  "sourcePreserved": true,
+  "mapPreserved": true,
+  "runtimeMatchesFiles": true,
+  "browserVisualCheck": false
+}

@@ -1,0 +1,13 @@
+{
+  "syntax": true,
+  "cameraPositionChangesWithZoom": true,
+  "cameraRadiusVsCeiling": true,
+  "cameraWallCollision": true,
+  "wheelLineMode": true,
+  "wheelPointerLock": true,
+  "menuScrollPreserved": true,
+  "perspectiveUV": true,
+  "noVertexSnapping": true,
+  "fontsEmbedded": true,
+  "browserInteraction": "not verified"
+}

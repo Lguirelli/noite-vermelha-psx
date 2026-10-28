@@ -1,0 +1,10 @@
+{
+  "syntax": true,
+  "wallSweep": true,
+  "maximumDistance": true,
+  "stuckRecovery": true,
+  "safeRecoveryPosition": true,
+  "distanceAnimation": true,
+  "zoomLimits": true,
+  "renderBrowser": "not verified"
+}
